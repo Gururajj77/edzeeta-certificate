@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "edzeeta-certification": {
+      "hosting": {
+        "edzeeta-certificate": [
+          "edzeeta-certification"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "edzeeta-certification"
+  }
+}

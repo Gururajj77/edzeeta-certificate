@@ -94,8 +94,28 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "edzeeta-certificate:build:production",
+              "serveTarget": "edzeeta-certificate:serve:production"
+            },
+            "development": {
+              "buildTarget": "edzeeta-certificate:build:development",
+              "serveTarget": "edzeeta-certificate:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

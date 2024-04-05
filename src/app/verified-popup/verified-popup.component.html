@@ -1,0 +1,21 @@
+<div class="verified-dialog-overlay" [class.show]="isDialogOpen">
+  <div class="verified-dialog">
+    <div class="verified-user-details">
+      <p>
+        Name: <strong>{{ userData.name }}</strong>
+      </p>
+      <p>
+        Course: <strong>{{ userData.courseName }}</strong>
+      </p>
+      <p>
+        Course Date: <strong>{{ userData.courseDate }}</strong>
+      </p>
+      <p>
+        Type of session: <strong>{{ userData.courseType }}</strong>
+      </p>
+    </div>
+    <div class="dialog-actions">
+      <button class="btn-cancel" (click)="closeDialog()">Cancel</button>
+    </div>
+  </div>
+</div>

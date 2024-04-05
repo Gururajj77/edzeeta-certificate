@@ -1,0 +1,33 @@
+<div class="container">
+  <img
+    style="width: 150px; height: 150px"
+    src="../../assets/logos/4.svg"
+    alt="edzeeta logo"
+  />
+  <div class="custom-form">
+    <input
+      class="custom-input"
+      type="text"
+      placeholder="Enter your Credential ID"
+      [(ngModel)]="credentialId"
+      (ngModelChange)="successMessage = ''"
+      appAddDash
+    />
+    <div class="result-message">
+      @if(successMessage==="Not Verified") {
+      <p style="color: red">Certificate Not Found</p>
+      }
+    </div>
+    <button
+      [disabled]="credentialId.length === 0"
+      (click)="checkCredentails()"
+      class="custom-button"
+      type="submit"
+      [ngClass]="{ 'custom-button-disabled': credentialId.length === 0 }"
+    >
+      Verify
+    </button>
+  </div>
+</div>
+@if(successMessage==="Verified"){ }
+<verified-popup [isDialogOpen]="openDialogBox" [userData]="verifiedUserData" />

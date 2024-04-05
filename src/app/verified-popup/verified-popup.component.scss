@@ -1,0 +1,66 @@
+.verified-dialog-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+
+  &.show {
+    display: flex;
+  }
+}
+
+.verified-dialog {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+}
+
+.dialog-actions {
+  text-align: right;
+}
+
+.btn-cancel {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-cancel {
+  background-color: #fff;
+  color: #004aad;
+  border: 1px solid #004aad;
+
+  &:hover {
+    background-color: lighten(#004aad, 40%);
+  }
+}
+
+.verified-user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+@media (max-width: 768px) {
+  .verified-dialog {
+    margin: 1rem;
+    width: 95%;
+  }
+
+  .btn-cancel {
+    padding: 0.5rem;
+  }
+}
