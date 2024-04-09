@@ -1,17 +1,17 @@
+<img
+class="custom-img"
+src="../../assets/logos/4.svg"
+alt="edzeeta logo"
+/>
 <div class="container">
-  <img
-    style="width: 150px; height: 150px"
-    src="../../assets/logos/4.svg"
-    alt="edzeeta logo"
-  />
   <div class="custom-form">
     <input
       class="custom-input"
       type="text"
       placeholder="Enter your Credential ID"
       [(ngModel)]="credentialId"
+      maxlength="8"
       (ngModelChange)="successMessage = ''"
-      appAddDash
     />
     <div class="result-message">
       @if(successMessage==="Not Verified") {
