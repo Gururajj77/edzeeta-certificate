@@ -1,6 +1,6 @@
 .custom-img{
-  width: 150px; 
-  height: 150px; 
+  width: 200px; 
+  height: 200px; 
   top: 0; 
   left: 0; 
   position: absolute;
@@ -20,6 +20,10 @@
   align-items: center;
   margin: 20px auto;
   font-family: "Montserrat", sans-serif;
+
+  .heading{
+    font-weight: bold;
+  }
 
   .custom-form {
     display: flex;

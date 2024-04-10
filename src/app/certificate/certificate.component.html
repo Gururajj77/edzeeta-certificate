@@ -4,13 +4,14 @@ src="../../assets/logos/4.svg"
 alt="edzeeta logo"
 />
 <div class="container">
+  <p class="heading">Validate your Certificate</p>
   <div class="custom-form">
     <input
       class="custom-input"
       type="text"
       placeholder="Enter your Credential ID"
       [(ngModel)]="credentialId"
-      maxlength="8"
+      maxlength="11"
       (ngModelChange)="successMessage = ''"
     />
     <div class="result-message">
